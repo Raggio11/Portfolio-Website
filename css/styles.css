@@ -1,0 +1,202 @@
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #808080;
+  --third-color:	grey;
+  --text-color:		#000000;
+  --visited-link: #18D115;
+  --active-link:	#66B032;
+  --font-size:17px;
+}
+
+
+header{
+  line-height: normal;
+  font-size: var(--font-size);
+  font-family: 'Roboto';
+}
+
+body{
+  background: inherit;
+  height: 1100px;
+  font-family: 'Roboto';
+  font-size: var(--font-size);
+  line-height: normal;
+  color: var(--text-color)
+}
+.profile{
+  color: var(--text-color);
+  text-align: center;
+  background: var(--primary-color);
+  box-sizing: content-box;
+  width: 800px;
+  height: 350px;
+  margin-left: 28%;
+  display: inline-block;
+}
+.profile_portrait{
+  float: left;
+  width: 350px;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+a:before{
+  color: none;
+}
+a:visited{
+  color: none;
+}
+a:hover{
+  cursor: pointer;
+  text-decoration: none;
+}
+a:active{
+  color: var(--active-link);
+}
+footer{
+  text-align: center;
+  background-color: inherit;
+  font-family: 'Roboto';
+  line-height: inherit;
+  font-size: var(--font-size);
+  line-height: normal;
+  color: var(--text-color);
+}
+.page-header{
+  background-position: center;
+  margin-left: 32%;
+  margin-right: 35%;
+  border-radius: 100px;
+}
+.page-header__item {
+  flex: 0 1 200px;
+  font-size: 20px;
+  border-radius: 50px;
+  margin-left: 2%;
+  font-family: inherit;
+}
+.info{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.info_item{
+  background: var(--primary-color);
+  color: 	var(--text-color);
+}
+.button, button {
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  background-color: var(--text-color);
+  color: black;
+  padding: 10px;
+  border-radius: 100px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition: 0.9s opacity;
+  background: var(--primary-color)
+}
+button:hover{
+  background-color: var(--third-color);
+}
+
+.page-footer{
+  clear: both;
+  background-color: inherit;
+}
+.Intro{
+  text-align: left;
+}
+
+.page-header__item {
+  flex: 0 1 200px;
+  font-size: 20px;
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+}
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.grid_item{
+  background: var(--primary-color);
+  color: var(--text-color);
+}
+div {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+}
+.social-media{
+  flex-basis: 200px;
+}
+.navigation-list{
+  list-style-type: none;
+}
+.navigation-list li{
+  display: inline-block;
+  margin-left: 15px;
+}
+#header_name{
+  font-size: 40px;
+}
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 750px){
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+    color: var(--text-color)
+  }
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+.main-navigation_page-header{
+  padding: 2px;
+  margin-right: 41%;
+  margin-left: 41%;
+}
+.main-navigation{
+  background: white;
+}
+.contact-body{
+  background: var(--secondary-color);
+  color: var(--text-color);
+}
+.background-img{
+  position: sticky;
+  background-size: cover;
+  background-image: url(https://cdn.hipwallpaper.com/i/22/81/1KPQDJ.jpg);
+  height: 1000px;
+  width: auto;
+}
