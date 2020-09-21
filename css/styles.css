@@ -1,7 +1,7 @@
 :root {
   --primary-color: #ffffff;
   --secondary-color: #808080;
-  --third-color:	grey;
+  --third-color:	#ffbf80;
   --text-color:		#000000;
   --visited-link: #18D115;
   --active-link:	#66B032;
@@ -96,7 +96,7 @@ footer{
   background: var(--primary-color)
 }
 button:hover{
-  background-color: var(--third-color);
+  background-color: var(--secondary-color);
 }
 
 .page-footer{
@@ -187,10 +187,10 @@ div {
   margin-left: 41%;
 }
 .main-navigation{
-  background: white;
+  background: var(--third-color) ;
 }
 .contact-body{
-  background: var(--secondary-color);
+  background: var(--primary-color);
   color: var(--text-color);
 }
 .background-img{
