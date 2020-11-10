@@ -112,9 +112,11 @@ button:active{
 .page-header__item {
   flex: 0 1 200px;
   font-size: 20px;
-  border: none;
-  display: inline-block;
-  font-family: inherit;
+  text-align: center;
+  align-items: center;
+  color: black;
+  justify-content: center;
+  display: flex;
 }
 .page-header__item:last-child {
   flex-grow: 1;
@@ -184,9 +186,12 @@ div {
 }
 }
 .main-navigation_page-header{
-  padding: 2px;
-  margin-right: 41%;
-  margin-left: 41%;
+  text-align: center;
+  align-items: center;
+  color: black;
+  justify-content: center;
+  display: flex;
+
 }
 .main-navigation{
   background: var(--third-color) ;
